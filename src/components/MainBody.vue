@@ -1,16 +1,27 @@
 <template>
 
     <div>
-        <div class="row">
-            <div class="col-12 col-md-7 text-center text-md-left my-auto pt-5 pt-md-0">
-
-                <span class="h1 font-weight-bold">This is an Header An One</span>
-
-                <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus expedita neque odit tempora molestiae odio recusandae consequatur, quisquam iusto dolores assumenda</p>
-
+        <div class="row bg-main">
+            
+            <div class="col-md-6 text-white d-none d-md-block bg-main-text">
+                <span class="h1">
+                    Meet
+                </span> <br>
+                <span class="h1 font-weight-bold">
+                    KnextKnox
+                </span> 
             </div>
 
-            <div class="col-12 col-md-5">
+            <div class="col-12 text-white d-block d-md-none text-center mt-5">
+                <span class="h1">
+                    Meet
+                </span> <br>
+                <span class="h1 font-weight-bold">
+                    KnextKnox
+                </span>
+            </div>
+
+            <div class="col-12 col-md-6 offset-md-3">
                 <img class="img-fluid" src="/images/mainImage.png" alt="introimage">
             </div>
 
@@ -46,7 +57,15 @@ export default {
 </script>
 
 <style>
-  
+    .bg-main{
+        background-color: #22272a;
+        height: 100vh;
+    }
+    .bg-main-text{
+        position: absolute;
+        top: 20vw;
+        left: 10%;
+    }
 </style>
 
 
