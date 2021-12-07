@@ -23,43 +23,12 @@
 
             <div class="col-12 col-md-10 offset-md-1">
 
-                <!--<div class="row justify-content-center mt-5">
-                    
-                    <div class="col-10 col-md-4 native-border mb-5 mb-md-0">
-                        <div class="row justify-content-center">
-                            <div class="text-white text-center col-6 col-md-6">
-                                <img src="icons/deposite.png" class="img-fluid mb-3" alt="">
-                                <span class="h4">withdraw</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-10 col-md-4 native-border mb-5 mb-md-0">
-                        <div class="row justify-content-center">
-                            <div class="text-white text-center col-6 col-md-6">
-                                <img src="icons/transfer.png" class="img-fluid mb-3" alt="">
-                                <span class="h4">withdraw</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-10 col-md-4 native-border mb-5 mb-md-0">
-                        <div class="row justify-content-center">
-                            <div class="text-white text-center col-6 col-md-6">
-                                <img src="icons/withdraw.png" class="img-fluid mb-3" alt="">
-                                <span class="h4">withdraw</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>-->
-
                 <div class="row justify-content-center mt-5">
                     <div class="col-10 col-md-4 mb-4">
                         <button class="btn btn-custom btn-blue pt-3 pb-3 font-weight-bold">Sign up</button>
                     </div>
                     <div class="col-10 col-md-4">
-                        <button class="btn btn-custom btn-border-blue pt-3 pb-3 font-weight-bold">Sign in</button>
+                        <router-link to="/login"><button class="btn btn-custom btn-border-blue pt-3 pb-3 font-weight-bold">Sign in</button></router-link>
                     </div>
                 </div>
             </div>
@@ -98,7 +67,6 @@ export default {
 <style>
     .bg-main{
         background-color: #22272a;
-        /*height: 100vh;*/
         padding-top: 8rem;
     }
  
@@ -109,14 +77,19 @@ export default {
         font-size: x-large;
     }
     .btn-blue{
-        background-color: #0e9ede;
+        background-color: #001ec5;
     }
     .btn-border-blue{
-        border:solid #0e9ede;
+        border:solid #001ec5;
     }
-    .native-border{
-       
-
+     .customInput{
+        border-radius: 12px;
+        height:56px;
+    }
+    .customInput:focus,
+    .customInput:hover{
+        transition:.5s ease;
+        
     }
 </style>
 
