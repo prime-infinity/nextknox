@@ -80,7 +80,6 @@ export default {
 
 <style>
     .bg-main{
-        /*background-color: #22272a;*/
         padding-top: 8rem;
         background-color:white;
     }
@@ -89,8 +88,14 @@ export default {
         width:100%;
         border-radius: 100px;
         font-size:large;
-        background-color: #0023c4;
+        background-color: #0f0f5c;
         color:white;
+    }
+    .btn-custom:hover{
+        transition: .5s ease;
+        background-color: black;
+        color:white;
+        /*border:#0023c4 solid;*/
     }
 
 </style>

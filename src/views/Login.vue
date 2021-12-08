@@ -6,14 +6,10 @@
             <div class="row pt-4">
                 <div class="col-11 col-md-5 mx-auto">
 
-                    <!--<div class="auth-header">
-                        <h2 class="font-weight-bold text-center">Sign In</h2>
-                    </div>-->
-
                     <form @submit.prevent="loginUser">
                     
                         <div class="form-group mb-4 pb-2">
-                            <input v-model="userData.acctNun" type="email" class="form-control custom-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Account Number">
+                            <input v-model="userData.acctNun" class="form-control custom-input" id="exampleInputEmail1" placeholder="Enter Account Number">
                         </div>
 
                         <div class="form-group mb-4 pb-3">
@@ -58,7 +54,9 @@
 
         }, 
         methods: {
-            
+            loginUser:function(){
+                this.$router.push('home')
+            }
         },  
     }
 </script>
